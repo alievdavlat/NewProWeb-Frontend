@@ -14,6 +14,7 @@ import { Offcanvas, OffcanvasClose, OffcanvasContent, OffcanvasOverlay, Offcanva
 import StickyHeader from '@/components/ui/stickyHeader'
 import Image from 'next/image'
 import TopHeader from './topHeader'
+import Logo from '../../../../public/icons/logo'
 
 const HeaderThree = () => {
     return (
@@ -46,8 +47,10 @@ const HeaderThree = () => {
                                         </Offcanvas>
 
                                         <Link href={"/"}>
-                                            <Image src={"/images/logo-light2.png"} width={500} height={200} alt='logo-white' unoptimized="true" className={`w-full h-full block dark:hidden`} />
-                                            <Image src={"/images/logo-next.png"} width={179} height={53} alt='logo-original' unoptimized="true" className='w-full h-full dark:block hidden' />
+                                            {/* <Image src={"/images/logo-light2.png"} width={500} height={200} alt='logo-white' unoptimized="true" className={`w-full h-full block dark:hidden`} />
+                                            <Image src={"/images/logo-next.png"} width={179} height={53} alt='logo-original' unoptimized="true" className='w-full h-full dark:block hidden' /> */}
+
+                                        <Logo/>
                                         </Link>
                                     </div>
                                     <div className='flex items-center gap-16'>
